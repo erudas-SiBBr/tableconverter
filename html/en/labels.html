@@ -13,12 +13,12 @@
   <div class="content">
     <!-- FORM -->
     <form action="/upload" method="get">
-      Select columns to remain fixed:<br>
+      4. Select the columns NOT to be converted:<br>
       {{range $element := .}}
       <input type="checkbox" name="{{$element.Value}}" value="{{$element.ID}}" >
       {{$element.Value}}<br>
       {{end}}
-      <input type="submit" value="Convert">
+      <input type="submit" value="Convert" name="5. Convert!">
     </form>
     <!-- END FORM -->
   </div>
