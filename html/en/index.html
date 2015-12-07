@@ -1,0 +1,34 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- STYLES -->
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<!-- END STYLE -->
+
+<!-- MENU GLOBAL -->
+<script type="text/javascript" charset="utf-8" src="http://www.sibbr.gov.br/menu/global_nav.js?v1.0"></script>
+<!-- END MENU GLOBAL -->
+
+<body>
+<div class="container">
+  <div class="content">
+    <!-- FORM -->
+    <h2> Wide to long format table converter<br>for Darwin Core sample based data publishing</h2>
+    <form action="http://localhost:8080/upload" method="post" enctype="multipart/form-data" class="form-convert">
+      <span class="cor">1. Table full path:</span> <br>
+      <input type="file" name="Browse...">
+      <br>
+      <span class="cor">2. Choose the table field separator:</span> <br>
+      <select name="separator" >
+        <option value="tab">Tab</option>
+        <option value=" ">Space</option>
+        <option value=";">; (semicolon)</option>
+        <option value=",">, (colon)</option>
+      </select>
+      <br>
+      <input type="submit" value="3. Send!" name="submit" class="submit">
+    </form>
+    <!-- END FORM -->
+  </div>
+</div>
+</body>
+</html>
